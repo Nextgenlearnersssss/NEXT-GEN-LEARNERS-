@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Next Gen Learners</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background-color: #000;
+    }
+
+    .header img {
+      width: 42px;
+      height: 42px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      margin: 0;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .glow-text {
+      font-size: 36px;
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffae00, 0 0 30px #ffae00;
+      animation: fadeUpDown 3s ease-in-out infinite;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    @keyframes fadeUpDown {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    }
+
+    .start-btn {
+      margin-top: 30px;
+      background-color: #ffd700;
+      color: black;
+      padding: 14px 36px;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+      transition: background 0.3s;
+    }
+
+    .start-btn:hover {
+      background-color: #ffc400;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Improved Header -->
+  <div class="header">
+    <img src="https://res.cloudinary.com/dghbtf0pl/image/upload/v1748508977/nextgen-bg_bibh8m.jpg" alt="Logo" onclick="goToYouTube()" />
+    <h1>Next Gen Learners</h1>
+  </div>
+
+  <!-- ✅ Glowing Text -->
+  <div class="glow-text">
+    Welcome to your learning journey
+  </div>
+
+  <!-- ✅ Button -->
+  <button class="start-btn" onclick="window.location.href='dashboard.html'">
+    Start Learning
+  </button>
+
+  <!-- ✅ Script -->
+  <script>
+    function goToYouTube() {
+      window.location.href = "https://youtube.com/@next_gen_learner-god?si=9tNt2FKtpMmnkmYE";
+    }
+  </script>
+
+</body>
+</html>

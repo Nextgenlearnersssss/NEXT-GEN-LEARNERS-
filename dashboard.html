@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Next Gen Learners</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #000;
+    }
+    .header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border: 2px solid #ffa500;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #ffd700;
+    }
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .card button {
+      background-color: #ffa500;
+      color: black;
+      border: none;
+      padding: 10px 16px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+    }
+    .card button:hover {
+      background-color: #ffc107;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://res.cloudinary.com/dghbtf0pl/image/upload/v1748508977/nextgen-bg_bibh8m.jpg" alt="Logo" onclick="goToYouTube()" />
+    <h1>Next Gen Learners</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>🎓 PW Courses</h2>
+      <p>Start your journey to success!</p>
+      <button onclick="window.location.href='pw-upload.html'">Start Learning →</button>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Next Toppers</h2>
+      <p>Excel in your studies with Next Toppers!</p>
+      <button onclick="window.location.href='nt-upload.html'">Start Learning →</button>
+    </div>
+
+    <div class="card">
+      <h2>📘 Courses</h2>
+      <p>Explore all curated academic courses!</p>
+      <button onclick="window.location.href='courses-upload.html'">Start Learning →</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Anurag. All rights reserved.</p>
+    <p>(Developed by Anurag)</p>
+  </footer>
+
+  <script>
+    function goToYouTube() {
+      window.location.href = "https://youtube.com/@next_gen_learner-god?si=9tNt2FKtpMmnkmYE";
+    }
+  </script>
+
+</body>
+</html>
